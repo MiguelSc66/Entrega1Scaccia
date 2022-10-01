@@ -1,0 +1,16 @@
+{% extends "AppCoder/padre.html" %}
+
+{% block titulo %}
+Resultado de Busqueda
+{% endblock %}
+
+{% block formulario %}
+    {% for profe in profes %}
+        <ul>
+            <li>Nombre: {{profe.nombre}}</li>
+            <li>Apellido: {{profe.apellido}}</li>
+            <li>Correo: {{profe.correo}}</li>
+            <li>Profesión: {{profe.profesion}}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
